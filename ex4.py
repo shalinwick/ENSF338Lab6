@@ -1,6 +1,6 @@
 import unittest
 
-class SimpleHeap:
+class Heap:
     def __init__(self):
         self.heap = []
     

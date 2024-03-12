@@ -29,7 +29,7 @@ class ListPriorityQueue:
         self.head = self.head.next
         return value
 
-class SimpleHeap:
+class Heap:
     def __init__(self):
         self.heap = []
 
@@ -105,4 +105,4 @@ if __name__ == "__main__":
     print(f"ListPriorityQueue: Total time: {list_time}, Average time per task: {list_time / 1000}")
     print(f"HeapPriorityQueue: Total time: {heap_time}, Average time per task: {heap_time / 1000}")
 
-# Q4 Explanation :
+# Q4 Explanation : The HeapPriorityQueue typically outperforms the ListPriorityQueue due to its efficient organization for adding and removing tasks. As the ListPriorityQueue grows, it becomes slower because each new task requires finding the correct insertion point. On the other hand, the HeapPriorityQueue, utilizing a heap structure, keeps the smallest item readily accessible, optimizing both additions and removals. Therefore, for handling numerous tasks, the heap-based approach maintains efficiency and speed.
